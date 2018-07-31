@@ -75,7 +75,6 @@ class Ui_MainWindow(QtGui.QMainWindow):
     def shuffleQuestion(self):
 
         randomline = linecache.getline(os.getcwd()+"/words/words.txt", random.randrange(0, 356043))
-        print(randomline)
         if randomline != "":
             return randomline
         else:
